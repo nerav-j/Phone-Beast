@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/eyeblank.png" type="image/icon type">
+    <title>Phone Beast - the ideal place for phones - Search - </title>
+</head>
+<body>
+    <header class="header"> <!--this is the eye at the top and the navbar-->
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Home</a>
+            <div class="container">
+                <div class="eyeBall">
+                  <div class="iris"></div>
+                </div>
+              </div>
+            <ul class="nav-menu">
+              <li class="nav-item one">
+                <a href="search.html" class="nav-link">Search</a>
+            </li>
+            <li class="nav-item two">
+                <a href="top.html" class="nav-link">Top</a>
+            </li>
+            <li class="nav-item three">
+                <a href="middle.html" class="nav-link">Middle</a>
+            </li>
+            <li class="nav-item four">
+                <a href="buget.html" class="nav-link">Buget</a>
+            </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+<script src="app.js"></script>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  #myInput {
+    background-image: url('assets/search.png');
+    background-position: 10px 10px; 
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-color: #e5eaf5;
+    width: 210px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid #781fcc;
+    margin-bottom: 12px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  #myInput:focus {
+  width: 50%;
+  border: 2px solid #781fcc;
+}
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #781fcc;
+    margin-top: -1px; 
+    background-color: #9d59de;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5eaf5;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 2px 2px #575757;
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #9353ce;
+  }
+  </style>
+  </head>
+  <body>
+  
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for phones..">
+  
+  <ul id="myUL">
+    <li><a href="beast.html">The Beast 21</a></li>
+    <li><a href="wave.html">WAVE 16</a></li>
+    <li><a href="grick.html">GBRICK10</a></li>
+    <li><a href="mons.html">The Monster 71</a></li>
+    <li><a href="beep.html">BEEP 12</a></li>
+    <li><a href="sbrick.html">SBRICK15</a></li>
+    <li><a href="bob.html">The BOB 14</a></li>
+    <li><a href="money.html">moneymaker 3</a></li>
+    <li><a href="ibrick.html">IBRICK100</a></li>
+  </ul>
+  
+  <script>
+  function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+  </script>
+<ul style="width: 100%;">
+  <li style="width: 100%;" class="lit">
+    <a href="beast.html" style="width: 100%;">
+    <div class="beast">
+      <br>
+   <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img src="assets/beast.png" alt="The Beast 21" style="width:270px;height:360px;">
+         </div>
+         <div class="flip-card-back">
+               <h1 style="font-size: 40px;">$2499</h1>
+               <p style="font-size: 30px;">SALE GREAT DEAL</p>
+               <p style="font-size: 30px;">BUY NOW !!!</p>
+         </div>
+       </div>
+     </div>
+     <ul style="list-style-type: none; color: #e5eaf5;" >
+         <li>
+           <h1 style="font-size: 50px;     text-decoration: underline;
+           text-decoration-color: #781fcc;
+           text-decoration-thickness: 5px;
+           text-underline-offset: 2px;">The Beast 21</h1>
+         </li>
+         <li>
+           <p style="font-size: 35px; ">The Beastliest Phone Till Now</p>
+         </li>
+         <li>
+           <p style="font-size: 20px;">The Beast 21 gives you a capacity of 300 GB to 2 TB. <br> The camera of The Beast 21 provides a 4k recording system. <BR>
+               The size of the phone is 2778 - by - 1284 pixel.</p>
+         </li>
+     </ul>
+  </div> 
+  </a>
+</li>
+<li style="width: 100%;" class="lit">
+  <a href="wave.html" style="width: 100%;">
+    <div class="beast">
+      <br>
+   <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img src="assets/wave.png" alt="The Beast 21" style="width:270px;height:360px;">
+         </div>
+         <div class="flip-card-back">
+               <h1 style="font-size: 40px;">$1499</h1>
+               <p style="font-size: 30px;">SALE GREAT DEAL</p>
+               <p style="font-size: 30px;">BUY NOW !!!</p>
+         </div>
+       </div>
+     </div>
+     <ul style="list-style-type: none; color: #e5eaf5;" >
+         <li>
+           <h1 style="font-size: 50px;     text-decoration: underline;
+           text-decoration-color: #781fcc;
+           text-decoration-thickness: 5px;
+           text-underline-offset: 2px;"> WAVE 16</h1>
+         </li>
+         <li>
+           <p style="font-size: 35px; ">EVIL-IN-SWAG-OUT</p>
+         </li>
+         <li>
+           <p style="font-size: 20px;">The Wave 16 is a phone which has a 660 gigabyte to 1 Terabyte capacity. <br> 
+            It’s back camera and front camera have a Wide and ultra wide camera. <br>
+             t’s battery lasts 15 hours and the charging takes 30 minutes to charge.</p>
+         </li>
+     </ul>
+  </div> 
+</a>
+</li>
+
+<li style="width: 100%;" class="lit">
+  <a href="grick.html" style="width: 100%;">
+    <div class="beast">
+      <br>
+   <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img src="assets/gold.png" alt="The Beast 21" style="width:270px;height:360px;">
+         </div>
+         <div class="flip-card-back">
+               <h1 style="font-size: 40px;">$99,999</h1>
+               <p style="font-size: 30px;">SALE GREAT DEAL</p>
+               <p style="font-size: 30px;">BUY NOW !!!</p>
+         </div>
+       </div>
+     </div>
+     <ul style="list-style-type: none; color: #e5eaf5;" >
+         <li>
+           <h1 style="font-size: 50px;     text-decoration: underline;
+           text-decoration-color: #781fcc;
+           text-decoration-thickness: 5px;
+           text-underline-offset: 2px;">GBRICK10</h1>
+         </li>
+         <li>
+           <p style="font-size: 35px; ">GGPE - Greatest Gold Phone Ever</p>
+         </li>
+         <li>
+           <p style="font-size: 20px;">The GBRICK 10 is a pure gold phone which has a chip that is an A14 Beast. <br>
+             It also has a capacity of 900 gigabytes to 2 terabytes. This phone is water resistant also. <br> The gold phone’s front camera has a wide and ultra wide camera. <br>
+              The back camera has a telephoto, a wide camera and also</p>
+         </li>
+     </ul>
+  </div>
+</a>
+</li>
+<li style="width: 100%;" class="lit">
+  <a href="mons.html" style="width: 100%;">
+    <div class="beast">
+      <br>
+   <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img src="assets/mons.png" alt="The Beast 21" style="width:270px;height:360px;">
+         </div>
+         <div class="flip-card-back">
+               <h1 style="font-size: 40px;">$349</h1>
+               <p style="font-size: 30px;">SALE GREAT DEAL</p>
+               <p style="font-size: 30px;">BUY NOW !!!</p>
+         </div>
+       </div>
+     </div>
+     <ul style="list-style-type: none; color: #e5eaf5;" >
+         <li>
+           <h1 style="font-size: 50px;     text-decoration: underline;
+           text-decoration-color: #781fcc;
+           text-decoration-thickness: 5px;
+           text-underline-offset: 2px;">The Monster 71</h1>
+         </li>
+         <li>
+           <p style="font-size: 35px; ">Monstrously POWERFUL</p>
+         </li>
+         <li>
+           <p style="font-size: 20px;">The Monster 71 has a capacity of about 470 gigabytes to about 940 gigabytes. <br>
+             The back camera and front camera have a wide and an ultra wide camera. <br>
+             It’s battery lasts about 10 hours and the charging time takes about 1 hour to have a full charge.</p>
+         </li>
+     </ul>
+  </div> 
+</a>
+</li>
+<li style="width: 100%;" class="lit">
+  <a href="#" style="width: 100%;">
+    <div class="beast">
+      <br>
+   <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img src="assets/beep.png" alt="The Beast 21" style="width:270px;height:360px;">
+         </div>
+         <div class="flip-card-back">
+               <h1 style="font-size: 40px;">$300</h1>
+               <p style="font-size: 30px;">SALE GREAT DEAL</p>
+               <p style="font-size: 30px;">BUY NOW !!!</p>
+         </div>
+       </div>
+     </div>
+     <ul style="list-style-type: none; color: #e5eaf5;" >
+         <li>
+           <h1 style="font-size: 50px;     text-decoration: underline;
+           text-decoration-color: #781fcc;
+           text-decoration-thickness: 5px;
+           text-underline-offset: 2px;">BEEP 12</h1>
+         </li>
+         <li>
+           <p style="font-size: 35px; ">BEEP BOOP BAAP BEEP</p>
+         </li>
+         <li>
+           <p style="font-size: 20px;">The BEEP 12 is a phone which has a 300 gigabyte to 600 gigabytes capacity. <br> 
+            It’s back camera and front camera have a Wide and slow-mo camera. <br>
+             t’s battery lasts 15 hours and the charging takes 30 minutes to charge.</p>
+         </li>
+     </ul>
+  </div> 
+</a>
+</li>
+<li style="width: 100%;" class="lit">
+  <a href="sbrick.html" style="width: 100%;">
+    <div class="beast">
+      <br>
+   <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img src="assets/silver.png" alt="The Beast 21" style="width:270px;height:360px;">
+         </div>
+         <div class="flip-card-back">
+               <h1 style="font-size: 40px;">$49,999</h1>
+               <p style="font-size: 30px;">SALE GREAT DEAL</p>
+               <p style="font-size: 30px;">BUY NOW !!!</p>
+         </div>
+       </div>
+     </div>
+     <ul style="list-style-type: none; color: #e5eaf5;" >
+         <li>
+           <h1 style="font-size: 50px;     text-decoration: underline;
+           text-decoration-color: #781fcc;
+           text-decoration-thickness: 5px;
+           text-underline-offset: 2px;">SBRICK15</h1>
+         </li>
+         <li>
+           <p style="font-size: 35px; ">SSS - Super Silver Smartphone</p>
+         </li>
+         <li>
+           <p style="font-size: 20px;">The SBRICK 15 is a pure silver phone which has a chip that is an A14 Beast. <br>
+             It also has a capacity of 900 gigabytes to 2 terabytes. This phone is water resistant also. <br> The gold phone’s front camera has a wide and ultra wide camera. <br>
+              The back camera has a telephoto, a wide camera and also</p>
+         </li>
+     </ul>
+  </div> 
+</a>
+</li>
+<li style="width: 100%;" class="lit">
+  <a href="bob.html" style="width: 100%;">
+    <div class="beast">
+      <br>
+   <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img src="assets/BOB.png" alt="The Beast 21" style="width:270px;height:360px;">
+         </div>
+         <div class="flip-card-back">
+               <h1 style="font-size: 40px;">$200</h1>
+               <p style="font-size: 30px;">SALE GREAT DEAL</p>
+               <p style="font-size: 30px;">BUY NOW !!!</p>
+         </div>
+       </div>
+     </div>
+     <ul style="list-style-type: none; color: #e5eaf5;" >
+         <li>
+           <h1 style="font-size: 50px;     text-decoration: underline;
+           text-decoration-color: #781fcc;
+           text-decoration-thickness: 5px;
+           text-underline-offset: 2px;">The BOB 14</h1>
+         </li>
+         <li>
+           <p style="font-size: 35px; ">ITZ DA BOB</p>
+         </li>
+         <li>
+           <p style="font-size: 20px;">The BOB 14 gives you a capacity of 50 GB to 128 GB. <br> The camera of the BOB  phone provides a HD recording system. <BR>
+               The size of the phone is 1920 - by - 1080 pixel. <br>It's a phone for the truest BOB</p>
+         </li>
+     </ul>
+  </div> 
+</a>
+</li>
+<li style="width: 100%;" class="lit">
+  <a href="money.html" style="width: 100%;">
+    <div class="beast">
+      <br>
+   <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img src="assets/moneymaker.png" alt="The Beast 21" style="width:270px;height:360px;">
+         </div>
+         <div class="flip-card-back">
+               <h1 style="font-size: 40px;">FORTY BUCKS</h1>
+               <p style="font-size: 30px;">SALE AMAZING DEAL</p>
+               <p style="font-size: 30px;">BUY NOW !!!</p>
+         </div>
+       </div>
+     </div>
+     <ul style="list-style-type: none; color: #e5eaf5;" >
+         <li>
+           <h1 style="font-size: 50px;     text-decoration: underline;
+           text-decoration-color: #781fcc;
+           text-decoration-thickness: 5px;
+           text-underline-offset: 2px;">moneymaker 3</h1>
+         </li>
+         <li>
+           <p style="font-size: 35px; ">You Have To Save Money, To Make Money</p>
+         </li>
+         <li>
+           <p style="font-size: 20px;">The moneymaker 3 is a phone which has a 16 gigabyte to 64 gigabyte capacity. <br> 
+            It’s back camera and front camera have decent quality fotage. <br>
+             t’s battery lasts 5 hours and the charging takes 3 hours to charge.</p>
+         </li>
+     </ul>
+  </div> 
+</a>
+</li>
+<li style="width: 100%;" class="lit">
+  <a href="ibrick.html" style="width: 100%;">
+    <div class="beast">
+      <br>
+   <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img src="assets/iron.png" alt="The Beast 21" style="width:270px;height:360px;">
+         </div>
+         <div class="flip-card-back">
+               <h1 style="font-size: 40px;">$1999</h1>
+               <p style="font-size: 30px;">SALE GREAT DEAL</p>
+               <p style="font-size: 30px;">BUY NOW !!!</p>
+         </div>
+       </div>
+     </div>
+     <ul style="list-style-type: none; color: #e5eaf5;" >
+         <li>
+           <h1 style="font-size: 50px;     text-decoration: underline;
+           text-decoration-color: #781fcc;
+           text-decoration-thickness: 5px;
+           text-underline-offset: 2px;">IBRICK100</h1>
+         </li>
+         <li>
+           <p style="font-size: 35px; ">IRON'T YOU EXCITED?</p>
+         </li>
+         <li>
+           <p style="font-size: 20px;">The IBRICK 100 is a pure iron phone which has a chip that is an A14 Beast. <br>
+             It also has a capacity of 900 gigabytes to 2 terabytes. This phone is water resistant also. <br> The gold phone’s front camera has a wide and ultra wide camera. <br>
+              The back camera has a telephoto, a wide camera and also</p>
+         </li>
+     </ul>
+  </div> 
+</a>
+</li>
+
+
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+  
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+<body>
+  
+    <div class="footer">
+      <p style="font-size: 15px;">Copyright Phonebeast Inc. all rights reserved. 🌐</p>
+    </div>
+  </div>
+  </body>
+  </html>

@@ -1,0 +1,65 @@
+.flip-card {
+    background-color: transparent;
+    width: 270px;
+    height: 360px;
+    border: 1px solid #e5eaf5;
+    perspective: 1000px; 
+    border-radius: 5px;
+  }
+  
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    align-self: left;
+    border-radius: 5px;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 5px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #e5eaf5;
+    color: #781fcc;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+  }
+   .beast {
+       padding: 10px;
+       border-radius: 10px;
+       background-color: #9d59de;
+       width: 100%;
+       left: 10%;
+       margin: 10px;
+        height: 400px;
+        top: 10%;
+        display: flex;
+        box-shadow: 5px 5px 10px 10px #575757;
+   }
+   .beast:hover {
+     box-shadow: none;
+   }

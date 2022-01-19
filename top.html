@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/eyeblank.png" type="image/icon type">
+    <link rel="stylesheet" href="design.css">
+    <title>Phone Beast - the ideal place for phones - Top - </title>
+</head>
+<body>
+    <header class="header"> <!--this is the eye at the top and the navbar-->
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Home</a>
+            <div class="container">
+                <div class="eyeBall">
+                  <div class="iris"></div>
+                </div>
+              </div>
+            <ul class="nav-menu">
+                <li class="nav-item one">
+                    <a href="search.html" class="nav-link">Search</a>
+                </li>
+                <li class="nav-item two">
+                    <a href="top.html" class="nav-link">Top</a>
+                </li>
+                <li class="nav-item three">
+                    <a href="middle.html" class="nav-link">Middle</a>
+                </li>
+                <li class="nav-item four">
+                    <a href="buget.html" class="nav-link">Buget</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+<script src="app.js"></script>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="assets/top1.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="assets/top2.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="assets/top3.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+      <body>
+  
+        <div class="footer">
+          <p style="font-size: 15px;">Copyright Phonebeast Inc. all rights reserved. 🌐</p>
+        </div>
+      </div>
+      <ul style="width: 100%;">
+        <li style="width: 100%;" class="lit">
+          <a href="beast.html" style="width: 100%;">
+          <div class="beast">
+            <br>
+         <div class="flip-card">
+             <div class="flip-card-inner">
+               <div class="flip-card-front">
+                 <img src="assets/beast.png" alt="The Beast 21" style="width:270px;height:360px;">
+               </div>
+               <div class="flip-card-back">
+                     <h1 style="font-size: 40px;">$2499</h1>
+                     <p style="font-size: 30px;">SALE GREAT DEAL</p>
+                     <p style="font-size: 30px;">BUY NOW !!!</p>
+               </div>
+             </div>
+           </div>
+           <ul style="list-style-type: none; color: #e5eaf5;" >
+               <li>
+                 <h1 style="font-size: 50px;     text-decoration: underline;
+                 text-decoration-color: #781fcc;
+                 text-decoration-thickness: 5px;
+                 text-underline-offset: 2px;">The Beast 21</h1>
+               </li>
+               <li>
+                 <p style="font-size: 35px; ">The Beastliest Phone Till Now</p>
+               </li>
+               <li>
+                 <p style="font-size: 20px;">The Beast 21 gives you a capacity of 300 GB to 2 TB. <br> The camera of The Beast 21 provides a 4k recording system. <BR>
+                     The size of the phone is 2778 - by - 1284 pixel.</p>
+               </li>
+           </ul>
+        </div> 
+        </a>
+      </li>
+      <li style="width: 100%;" class="lit">
+        <a href="wave.html" style="width: 100%;">
+        <div class="beast">
+          <br>
+       <div class="flip-card">
+           <div class="flip-card-inner">
+             <div class="flip-card-front">
+               <img src="assets/wave.png" alt="The Beast 21" style="width:270px;height:360px;">
+             </div>
+             <div class="flip-card-back">
+                   <h1 style="font-size: 40px;">$1499</h1>
+                   <p style="font-size: 30px;">SALE GREAT DEAL</p>
+                   <p style="font-size: 30px;">BUY NOW !!!</p>
+             </div>
+           </div>
+         </div>
+         <ul style="list-style-type: none; color: #e5eaf5;" >
+             <li>
+               <h1 style="font-size: 50px;     text-decoration: underline;
+               text-decoration-color: #781fcc;
+               text-decoration-thickness: 5px;
+               text-underline-offset: 2px;"> WAVE 16</h1>
+             </li>
+             <li>
+               <p style="font-size: 35px; ">EVIL-IN-SWAG-OUT</p>
+             </li>
+             <li>
+               <p style="font-size: 20px;">The Wave 16 is a phone which has a 660 gigabyte to 1 Terabyte capacity. <br> 
+                It’s back camera and front camera have a Wide and ultra wide camera. <br>
+                 t’s battery lasts 15 hours and the charging takes 30 minutes to charge.</p>
+             </li>
+         </ul>
+      </div> 
+      </a>
+      </li>
+      
+      <li style="width: 100%;" class="lit">
+        <a href="grick.html" style="width: 100%;">
+        <div class="beast">
+          <br>
+       <div class="flip-card">
+           <div class="flip-card-inner">
+             <div class="flip-card-front">
+               <img src="assets/gold.png" alt="The Beast 21" style="width:270px;height:360px;">
+             </div>
+             <div class="flip-card-back">
+                   <h1 style="font-size: 40px;">$99,999</h1>
+                   <p style="font-size: 30px;">SALE GREAT DEAL</p>
+                   <p style="font-size: 30px;">BUY NOW !!!</p>
+             </div>
+           </div>
+         </div>
+         <ul style="list-style-type: none; color: #e5eaf5;" >
+             <li>
+               <h1 style="font-size: 50px;     text-decoration: underline;
+               text-decoration-color: #781fcc;
+               text-decoration-thickness: 5px;
+               text-underline-offset: 2px;">GBRICK10</h1>
+             </li>
+             <li>
+               <p style="font-size: 35px; ">GGPE - Greatest Gold Phone Ever</p>
+             </li>
+             <li>
+               <p style="font-size: 20px;">The GBRICK 10 is a pure gold phone which has a chip that is an A14 Beast. <br>
+                 It also has a capacity of 900 gigabytes to 2 terabytes. This phone is water resistant also. <br> The gold phone’s front camera has a wide and ultra wide camera. <br>
+                  The back camera has a telephoto, a wide camera and also</p>
+             </li>
+         </ul>
+      </div> 
+      </a>
+      </li>
+  </body>
+</html>
